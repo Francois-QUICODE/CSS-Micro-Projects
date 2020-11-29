@@ -36,7 +36,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
-        font-size: 3vw;
+        font-size: 5vw;
         width: 20vw;
         height: 20vw;
         border: none;
@@ -45,14 +45,14 @@
       }
 
       .pulsating-button {
-        z-index: 1;
+        z-index: 2;
       }
 
       .pulsation {
-        background-color: transparent;
-        border: 1vw solid #ff3311;
-        z-index: 2;
-        animation: pulsating 850ms ease-out infinite;
+        background-color: #222227;
+        border: 1vw solid #ff5f00;
+        z-index: 1;
+        animation: pulsating 800ms ease-out infinite;
         transition: ease;
       }
 
@@ -61,7 +61,7 @@
       }
 
       @keyframes pulsating {
-        50% {
+        66% {
           width: 21vw;
           height: 21vw;
           border-color: #ff3333;
@@ -69,10 +69,11 @@
         }
 
         100% {
-          width: 27vw;
-          height: 27vw;
+          width: 25vw;
+          height: 25vw;
           border-color: inherit;
           border-width: 0.1vw;
+          border-style: groove;
         }
       }
     </style>

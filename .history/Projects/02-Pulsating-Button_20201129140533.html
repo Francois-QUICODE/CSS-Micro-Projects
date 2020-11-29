@@ -36,44 +36,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
-        font-size: 3vw;
+        font-size: 5vw;
         width: 20vw;
         height: 20vw;
         border: none;
-        background-color: #ff5f00;
-        color: #222227;
-      }
-
-      .pulsating-button {
-        z-index: 1;
-      }
-
-      .pulsation {
-        background-color: transparent;
-        border: 1vw solid #ff3311;
-        z-index: 2;
-        animation: pulsating 850ms ease-out infinite;
-        transition: ease;
-      }
-
-      .pulsation:hover {
-        animation: none;
-      }
-
-      @keyframes pulsating {
-        50% {
-          width: 21vw;
-          height: 21vw;
-          border-color: #ff3333;
-          border-width: 0.5vw;
-        }
-
-        100% {
-          width: 27vw;
-          height: 27vw;
-          border-color: inherit;
-          border-width: 0.1vw;
-        }
       }
     </style>
   </body>
