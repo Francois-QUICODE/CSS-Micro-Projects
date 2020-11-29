@@ -7,7 +7,10 @@
   <body>
     <div class="container">
       <button class="pulsating-button">Click Me!</button>
-      <div class="pulsation"><div class="pulsation echo"></div></div>
+      <div class="pulsations">
+        <div class="pulsation"></div>
+        <div class="pulsation echo"></div>
+      </div>
     </div>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
@@ -58,11 +61,15 @@
       }
 
       .echo {
+        z-index: 3;
         animation: 1000ms pulsating 500ms ease-out infinite;
       }
 
-      .pulsation:hover,
-      .echo:hover {
+      .pulsations {
+        z-index: 5;
+      }
+
+      .pulsations:hover {
         animation: none;
       }
 

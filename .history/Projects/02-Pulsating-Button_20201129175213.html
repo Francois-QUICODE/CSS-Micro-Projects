@@ -7,10 +7,11 @@
   <body>
     <div class="container">
       <button class="pulsating-button">Click Me!</button>
-      <div class="pulsation"><div class="pulsation echo"></div></div>
+      <div class="pulsation"></div>
+      <div class="pulsation echo"></div>
     </div>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Alatsi&display=swap");
 
       body {
         background-color: #000014;
@@ -19,7 +20,7 @@
         margin: auto;
         color: #e5e1e1;
         padding-top: 10vh;
-        font-family: "Nerko One", cursive;
+        font-family: "Alatsi", sans-serif;
       }
 
       .container {
@@ -36,13 +37,12 @@
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
-        font-size: 5vw;
+        font-size: 3vw;
         width: 20vw;
         height: 20vw;
         border: none;
         background-color: #ff5f00;
         color: #222227;
-        font-family: "Nerko One", cursive;
       }
 
       .pulsating-button {
@@ -53,16 +53,15 @@
         background-color: transparent;
         border: 1vw solid #ff3311;
         z-index: 2;
-        animation: pulsating 1000ms ease-out infinite;
+        animation: pulsating 850ms ease-out infinite;
         transition: ease;
       }
 
       .echo {
-        animation: 1000ms pulsating 500ms ease-out infinite;
+        animation: 10ms pulsating 850ms ease-out infinite;
       }
 
-      .pulsation:hover,
-      .echo:hover {
+      .pulsation:hover {
         animation: none;
       }
 
