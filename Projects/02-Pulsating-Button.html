@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pulsating Button</title>
+  </head>
+  <body>
+    <div class="container">
+      <button class="pulsating-button">Click Me!</button>
+      <div class="pulsation"></div>
+    </div>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alatsi&display=swap");
+
+      body {
+        background-color: #000014;
+        width: 80vw;
+        max-width: 1024px;
+        margin: auto;
+        color: #e5e1e1;
+        padding-top: 10vh;
+        font-family: "Alatsi", sans-serif;
+      }
+
+      .container {
+        background-color: #222227;
+        padding: 15px;
+        display: flex;
+        height: 80vh;
+      }
+
+      .pulsating-button,
+      .pulsation {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        font-size: 5vw;
+        width: 20vw;
+        height: 20vw;
+        border: none;
+        background-color: #ff5f00;
+        color: #222227;
+      }
+
+      .pulsating-button {
+        z-index: 2;
+      }
+
+      .pulsation {
+        background-color: #222227;
+        border: 1vw solid #ff5f00;
+        z-index: 1;
+        animation: pulsating 800ms ease infinite;
+      }
+
+      .pulsation:hover {
+        animation: none;
+      }
+
+      @keyframes pulsating {
+        66% {
+          width: 21vw;
+          height: 21vw;
+          border-color: #ff3333;
+        }
+
+        100% {
+          width: 25vw;
+          height: 25vw;
+          border-color: inherit;
+        }
+      }
+    </style>
+  </body>
+</html>
